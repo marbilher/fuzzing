@@ -9,8 +9,8 @@ namespace mutational_fuzzer
         public static void Main(string[] args)
         {
             Console.WriteLine("Starting");
-
-            PostRequestFuzzer.MakeRequest(args);
+            string[] requestpath = { "../../../tmp/request.txt" };
+            PostRequestFuzzer.MakeRequest(requestpath);
             //string url = args[0];
             //int index = url.IndexOf("?");
             //string[] parms = url.Remove(0, index + 1).Split("&");
