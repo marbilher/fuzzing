@@ -44,7 +44,7 @@ namespace mutational_fuzzer
                     sock.Receive(buf);
                     string response = Encoding.ASCII.GetString(buf);
                     if (response.Contains("error in your SQL syntax"))
-                        Console.WriteLine("Parameter " + parm + "might be vulnerable.");
+                        Console.WriteLine("Parameter " + parm + " might be vulnerable.");
                     Console.WriteLine(" to SQL injection with value: " + val + "'");
                     
                 }
